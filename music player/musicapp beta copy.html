@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title></title>
+
+</head>
+<body>
+
+<!-- base kinda -->
+
+
+	<div class="background"></div>
+
+	<div class="buttonOne"></div>
+	<div class="buttonTwo"></div>
+
+
+<!-- Main Page -->
+
+	<div class="firstPageItems" id="mainPage">
+		<div class="news"></div>
+		<div class="blockOne" onclick="sClick()"></div>
+		<div class="blockTwo" onclick="gClick()"></div>
+		<div class="blockThree" onclick="cClick()"></div>
+		<div class="blockFour"></div>
+	</div>
+
+
+<!-- scene page -->
+
+	<div class="firstBlockItems" id="scenePage" style="display: none;">
+		<div class="returnButton" onclick="sBackToMain()"></div>
+		<div class="addScene" onclick="openASoption()"></div>
+		<div class="familySb" onclick="openFs()"></div>
+		<div class="study"></div>
+		<div class="studyLofi"></div>
+
+	</div>
+
+	<div class="addSceneOption" id="sceneOption" style="display: none;">
+		<div class="asoBackground" onclick="backToScene()"></div>
+		<div class="browseButton"></div>
+		<div class="mmoButton"></div>
+		<div class="cancelButton" onclick="backToScene()"></div>
+
+	</div>
+
+
+
+
+
+
+
+	<div class="firstBlockOne" id="familyScene" style="display: none;">
+		<div class="familyPic"></div>
+		<div class="returnButton" onclick="ssBackToMain()"></div>
+		<div class="shuffleB"></div>
+		<div class="aBoard"></div>
+
+	</div>
+
+
+
+<!-- Go page -->
+
+	<div class="secondBlockItems" id="goPage" style="display: none;">
+		<div class="returnButton" onclick="gBackToMain()"></div>
+		<div class="iTunes"></div>
+		<div class="containerGrey"></div>
+		<div class="lastSong"></div>
+		<div class="bPlayButton"></div>
+		<div class="nextSong"></div>
+		<div class="degree"></div>
+		<div class="bPauseButton"></div>
+	</div>
+
+
+
+
+
+<!-- Collection page -->
+
+	<div class="thirdBlockItems" id="collectionPage" style="display: none;">
+		<div class="returnButton" onclick="cBackToMain()"></div>
+		<div class="titleC"></div>
+		<div class="boardC"></div>
+		<div class="firstC" onclick="brunoTime()" ></div>
+		<div class="secondC"onclick="ayueTime()"></div>
+		<div class="thirdC" onclick="finesseTime()"></div>
+		<div class="fourthC" onclick="puzzleTime()"></div>
+	</div>
+
+
+
+
+
+
+
+<!-- currently playing area BIG one -->
+
+	<div class="ppl" id="currentlyPlaying" style="display: none;">
+		<div class="purpleBackground"></div>
+		<div class="dragDown" onclick="backToMainNbar()"></div>
+		<div class="bigBruno"></div>
+		<div class="bigAyue"></div>
+		<div class="bigFinesse"></div>
+		<div class="bigPuzzleman"></div>
+
+		<div class="lyrics"></div>	
+		<div class="bigLast"></div>
+		<div class="bigPlay"></div>
+		<div class="bigNext"></div>
+		<div class="bigPlus"></div>
+		<div class="bigPlus"></div>
+		<div class="timeline"></div>
+		<div class="topButtonOne"></div>
+
+	</div>
+
+
+
+
+
+<!-- Playing bar-->
+
+	<div class="theBarBelow" id="playingBar">
+		<div class="playingSong" onclick="barClick()"></div>
+		<div class="playButton" onclick="playCurrentSong()" id="playDisplay"></div>
+		<div class="pauseButton" onclick="pauseCurrentSong()" id="pauseDisplay"></div>
+	</div>
+
+
+
+
+
+
+
+
+
+<!-- Audio files -->
+
+
+	<audio id="mars" > <source src="music/mars.wav" type="audio/wav"></audio>
+	<audio id="ayue"> <source src="music/ayue.wav" type="audio/wav"></audio>
+	<audio id="finesse"> <source src="music/finese.wav" type="audio/wav"></audio>
+	<audio id="puzzleman"> <source src="music/puzzleman.wav" type="audio/wav"></audio>
+
+
+
+
+
+
+
+	<script >
+		var a;
+		var active;
+
+		/*
+		now its super weird. I have check that the code inside each trigger function is the same, they are just different in the "content" that being stop and play.
+
+		but now, the first function and the second can affect each other, 
+				 the first can be affected by every thing
+				 the second can only affect the first
+				 third and fourth is completely run there own
+
+		I have try to change the functions order but its not the case
+
+		*/
+
+		 // if variable is 1, then mars plays, ayue pauses, finesse pauses, puzzleman pauses... + ayue current time = 0, ......`
+
+		function brunoTime() {
+			document.getElementById("pauseDisplay").style.display = "block";
+			document.getElementById("playDisplay").style.display = "none";
+ 
+			if(a == document.getElementById("ayue" || "finesse" || "puzzleman") ){
+
+				a.pause();
+				a.currentTime = 0;
+				a = document.getElementById("mars");
+				a.play();
+			} else{
+				a = document.getElementById("mars");
+				a.play();
+			}
+		}
+
+
+		function ayueTime() {
+			document.getElementById("pauseDisplay").style.display = "block";
+			document.getElementById("playDisplay").style.display = "none";
+
+			if(a == document.getElementById("mars" || "finesse" || "puzzleman") ){
+
+				a.pause();
+				a.currentTime = 0;
+				a = document.getElementById("ayue");
+				a.play();
+			} else{
+				a = document.getElementById("ayue");
+				a.play();
+			}
+	
+
+		}
+
+
+
+
+		function finesseTime() {
+			document.getElementById("pauseDisplay").style.display = "block";
+			document.getElementById("playDisplay").style.display = "none";
+ 
+			if(a == document.getElementById("mars" || "ayue" || "puzzleman") ){
+
+				a.pause();
+				a.currentTime = 0;
+				a = document.getElementById("finesse");
+				a.play();
+			} else{
+				a = document.getElementById("finesse");
+				a.play();
+			}
+			
+		}
+
+		function puzzleTime() {
+			document.getElementById("pauseDisplay").style.display = "block";
+			document.getElementById("playDisplay").style.display = "none";
+ 
+			if(a == document.getElementById("mars" || "ayue" || "finesse") ){
+
+				a.pause();
+				a.currentTime = 0;
+				a = document.getElementById("puzzleman");
+				a.play();
+			} else{
+				a = document.getElementById("puzzleman");
+				a.play();
+			}
+		}
+
+
+
+
+
+
+
+
+		function playCurrentSong() {
+			a.play();
+			document.getElementById("pauseDisplay").style.display = "block";
+			document.getElementById("playDisplay").style.display = "none";
+		}
+
+		function pauseCurrentSong() {
+			a.pause();
+			document.getElementById("pauseDisplay").style.display = "none";
+			document.getElementById("playDisplay").style.display = "block";
+		}
+
+
+		/* mainpage function*/
+
+		function sClick() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("scenePage").style.display = "block";
+
+		}
+
+			function openASoption(){
+				document.getElementById("scenePage").style.display = "none";
+				document.getElementById("sceneOption").style.display = "block";
+				document.getElementById("playingBar").style.display = "none";
+			}
+
+			function backToScene(){
+				document.getElementById("scenePage").style.display = "block";
+				document.getElementById("sceneOption").style.display = "none";
+				document.getElementById("playingBar").style.display = "block";
+
+
+			}
+
+
+
+			function openFs(){
+				document.getElementById("scenePage").style.display = "none";
+				document.getElementById("familyScene").style.display = "block";
+
+			}
+
+
+		function gClick() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("goPage").style.display = "block";
+
+		}
+
+		function cClick() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("collectionPage").style.display = "block";
+
+		}
+
+		function barClick() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("currentlyPlaying").style.display = "block";
+			document.getElementById("playingBar").style.display = "none";
+		}	
+
+		function backToMainNbar() {
+			document.getElementById("currentlyPlaying").style.display = "none";
+			document.getElementById("playingBar").style.display = "block";
+		}	/* (solved)problem 2: program the path that when click that down v, it goes back to the page before, not just the front page*/
+
+
+		function sBackToMain(){
+			document.getElementById("mainPage").style.display = "block";
+			document.getElementById("scenePage").style.display = "none";
+		}
+
+		function ssBackToMain(){
+			document.getElementById("scenePage").style.display = "block";
+			document.getElementById("familyScene").style.display = "none";
+		}
+
+		function gBackToMain(){
+			document.getElementById("mainPage").style.display = "block";
+			document.getElementById("goPage").style.display = "none";
+		}
+
+		function cBackToMain(){
+			document.getElementById("mainPage").style.display = "block";
+			document.getElementById("collectionPage").style.display = "none";
+		}
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>

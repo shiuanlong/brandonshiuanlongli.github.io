@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title></title>
+
+</head>
+<body>
+
+<!-- base kinda -->
+
+
+	<div class="background"></div>
+
+	<div class="buttonOne"></div>
+	<div class="buttonTwo"></div>
+
+
+<!-- Main Page -->
+
+	<div class="firstPageItems" id="mainPage">
+		<div class="news"></div>
+		<div class="blockOne" onclick="sClick()"></div>
+		<div class="blockTwo" onclick="gClick()"></div>
+		<div class="blockThree" onclick="cClick()"></div>
+		<div class="blockFour"></div>
+	</div>
+
+
+<!-- scene page -->
+
+	<div class="firstBlockItems" id="scenePage" style="display: none;">
+		<div class="returnButton" onclick="sBackToMain()"></div>
+		<div class="addScene" onclick="openASoption()"></div>
+		<div class="familySb" onclick="openFs()"></div>
+		<div class="study"></div>
+		<div class="studyLofi"></div>
+
+	</div>
+
+	<div class="addSceneOption" id="sceneOption" style="display: none;">
+		<div class="asoBackground" onclick="backToScene()"></div>
+		<div class="browseButton"></div>
+		<div class="mmoButton" onclick="goMake()"></div>
+		<div class="cancelButton" onclick="backToScene()"></div>
+
+	</div>
+
+
+	<div class="makeYourOwn" id="makeYourOwn" style="display: none;">
+		<div class="returnButton" onclick="backToScene()"></div>
+		<div class="addScene2"></div>
+
+	</div>
+
+
+
+
+
+
+
+	<div class="firstBlockOne" id="familyScene" style="display: none;">
+		<div class="familyPic"></div>
+		<div class="returnButton" onclick="ssBackToMain()"></div>
+		<div class="shuffleB" onclick="goShuffle()"></div>
+		<div class="aBoard"></div>
+
+
+		<div class="blueberry"></div>
+		<div class="mds"></div>
+		<div class="yourName"></div>
+		<div class="htbar"></div>
+
+	</div>
+
+
+
+<!-- Go page -->
+
+	<div class="secondBlockItems" id="goPage" style="display: none;">
+		<div class="returnButton" onclick="gBackToMain()"></div>
+		<div class="iTunes"></div>
+		<div class="containerGrey"></div>
+		<div class="lastSong"></div>
+		<div class="bPlayButton" onclick="goPlay()" id="playR"></div>
+		<div class="bPauseButton" onclick="goPause()" id="pauseR"></div>
+		<div class="nextSong" onclick="goNext()"></div>
+		<div class="degree"></div>
+		
+
+
+		<div class="herbieAb" id="showHerbie"></div>
+		<div class="billAb" id="showBill"></div>
+		<div class="mitaAb" id="showMita"></div>
+		<div class="puzzleAb" id="showPuzzle"></div>
+
+		<div class="herbieTt" id="showHerbie2"></div>
+		<div class="billTt" id="showBill2"></div>
+		<div class="mitaTt" id="showMita2"></div>
+		<div class="puzzleTt" id="showPuzzle2"></div>
+
+
+
+
+
+	</div>
+
+
+
+
+
+<!-- Collection page -->
+
+	<div class="thirdBlockItems" id="collectionPage" style="display: none;">
+		<div class="returnButton" onclick="cBackToMain()"></div>
+		<div class="titleC"></div>
+		<div class="boardC"></div>
+		<div class="firstC" onclick="brunoTime()"></div>
+		<div class="secondC"onclick="ayueTime()"></div>
+		<div class="thirdC" onclick="finesseTime()"></div>
+		<div class="fourthC" onclick="puzzleTime()"></div>
+	</div>
+
+
+
+
+
+
+
+<!-- currently playing area BIG one -->
+
+	<div class="ppl" id="currentlyPlaying" style="display: none;">
+		<div class="purpleBackground"></div>
+		<div class="dragDown" onclick="backToMainNbar()"></div>
+
+		<div class="lyrics"></div>	
+		<div class="bigLast"></div>
+		<div class="bigPlay" id="bigPlay" onclick="playCurrentSongBig()"></div>
+		<div class="bigPause" id="bigPause" onclick="pauseCurrentSongBig()"></div>
+		<div class="bigNext"></div>
+		<div class="bigPlus"></div>
+		<div class="bigPlus"></div>
+		<div class="timeline"></div>
+		<div class="topButtonOne"></div>
+
+	</div>
+
+		<div class="bigBruno" id="bigBruno"></div>
+		<div class="bigAyue" id="bigAyue"></div>
+		<div class="bigFinesse" id="bigFinesse"></div>
+		<div class="bigPuzzleman" id="bigPuzzleman"></div>
+
+		<div class="bigFur" id="bigFur"></div>
+		<div class="bigJay" id="bigJay"></div>
+		<div class="bigEmma" id="bigEmma"></div>
+		<div class="bigMen" id="bigMen"></div>
+
+
+
+
+
+<!-- Playing bar-->
+
+	<div class="theBarBelow" id="playingBar">
+		<div class="playingSong1" onclick="barClick1()" id="playing1"></div>
+		<div class="playingSong2" onclick="barClick2()" id="playing2"></div>
+		<div class="playingSong3" onclick="barClick3()" id="playing3"></div>
+		<div class="playingSong4" onclick="barClick4()" id="playing4"></div>
+
+		<div class="playingSong5" onclick="barClick5()" id="playing5"></div>
+		<div class="playingSong6" onclick="barClick6()" id="playing6"></div>
+		<div class="playingSong7" onclick="barClick7()" id="playing7"></div>
+		<div class="playingSong8" onclick="barClick8()" id="playing8"></div>
+
+		<div class="playButton" onclick="playCurrentSong()" id="playDisplay"></div>
+		<div class="pauseButton" onclick="pauseCurrentSong()" id="pauseDisplay"></div>
+
+	</div>
+
+		
+
+
+
+
+
+
+
+
+<!-- Audio files -->
+
+
+	<audio id="mars"> <source src="music/mars.wav" type="audio/wav"></audio>
+	<audio id="ayue"> <source src="music/ayue.wav" type="audio/wav"></audio>
+	<audio id="finesse"> <source src="music/finese.wav" type="audio/wav"></audio>
+	<audio id="puzzleman"> <source src="music/puzzleman.wav" type="audio/wav"></audio>
+
+	<audio id="herbie"> <source src="music/herbie.wav" type="audio/wav"></audio>
+	<audio id="bill"> <source src="music/bill.wav" type="audio/wav"></audio>
+	<audio id="mita"> <source src="music/mita.wav" type="audio/wav"></audio>
+	<audio id="mita_s"> <source src="music/mita_s.wav" type="audio/wav"></audio>
+
+	<audio id="stillLove"> <source src="music/stillLove.wav" type="audio/wav"></audio>
+
+	<audio id="theFur"> <source src="music/theFur.wav" type="audio/wav"></audio>
+	<audio id="jayChou"> <source src="music/jayChou.wav" type="audio/wav"></audio>
+	<audio id="bernache"> <source src="music/bernache.wav" type="audio/wav"></audio>
+
+
+
+
+
+
+
+
+
+
+	<script >
+		var a = document.getElementById("mars");
+		var b = document.getElementById("ayue");
+		var c = document.getElementById("finesse");
+		var d = document.getElementById("puzzleman");
+		var aa = document.getElementById("playing1");
+		var bb = document.getElementById("playing2");
+		var cc = document.getElementById("playing3");
+		var dd = document.getElementById("playing4");
+
+
+		var e = document.getElementById("theFur"); 
+		var f = document.getElementById("jayChou");
+		var g = document.getElementById("bernache");
+		var h = document.getElementById("mita");
+		var ee = document.getElementById("playing5");
+		var ff = document.getElementById("playing6");
+		var gg = document.getElementById("playing7");
+		var hh = document.getElementById("playing8");
+
+
+		var i = document.getElementById("herbie"); //audio
+		var j = document.getElementById("bill");
+		var k = document.getElementById("mita_s");
+		var l = document.getElementById("stillLove");
+
+		
+
+		var iii = document.getElementById("showHerbie"); //image
+		var jjj = document.getElementById("showBill");
+		var kkk = document.getElementById("showMita");
+		var lll = document.getElementById("showPuzzle");
+
+		var iiiO = document.getElementById("showHerbie2");
+		var jjjO = document.getElementById("showBill2");
+		var kkkO = document.getElementById("showMita2");
+		var lllO = document.getElementById("showPuzzle2");
+
+		var sorrySpecialSituation;
+
+
+
+
+
+
+		var shuffleList = [document.getElementById("theFur"), document.getElementById("jayChou"), document.getElementById("bernache"), document.getElementById("mita")];
+
+		var counter = 0;
+
+
+		var sss;
+		var xxx;
+
+
+
+
+
+
+ 		var smallPlay =  document.getElementById("playDisplay");
+		var smallPause = document.getElementById("pauseDisplay");
+
+		var nowPlaying;
+
+	
+		/*
+		now its super weird. I have check that the code inside each trigger function is the same, they are just different in the "content" that being stop and play.
+
+		but now, the first function and the second can affect each other, 
+				 the first can be affected by every thing
+				 the second can only affect the first
+				 third and fourth is completely run there own
+
+		I have try to change the functions order but its not the case
+
+		*/
+
+		 // if variable is 1, then mars plays, ayue pauses, finesse pauses, puzzleman pauses... + ayue current time = 0, ......`
+
+
+
+		function brunoTime() {
+			aa.style.display = "block";
+			bb.style.display = "none";
+			cc.style.display = "none";
+			dd.style.display = "none";
+			ee.style.display = "none";
+			ff.style.display = "none";
+			gg.style.display = "none";
+			hh.style.display = "none";
+	
+			smallPause.style.display = "block";
+			smallPlay.style.display = "none";
+
+			a.play()// play brunoTime
+			b.pause(); c.pause(); d.pause(); e.pause(); f.pause(); g.pause(); h.pause();
+			i.pause(); j.pause(); k.pause(); l.pause();	
+
+			// pause song 2, song 3, song 4
+			b.currentTime = 0;
+			c.currentTime = 0;
+			d.currentTime = 0;
+			e.currentTime = 0;
+			f.currentTime = 0;
+			g.currentTime = 0;
+			h.currentTime = 0;
+			i.currentTime = 0;
+			j.currentTime = 0;
+			k.currentTime = 0;
+			l.currentTime = 0;
+
+
+			nowPlaying = 1;
+
+			// reset song 2, song 3, song 4
+			// show play icon
+			// change text to song name
+
+
+		}
+
+		function ayueTime() {
+			aa.style.display = "none";
+			bb.style.display = "block";
+			cc.style.display = "none";
+			dd.style.display = "none";
+			ee.style.display = "none";
+			ff.style.display = "none";
+			gg.style.display = "none";
+			hh.style.display = "none";
+
+			smallPause.style.display = "block";
+			smallPlay.style.display = "none";
+
+			b.play()
+			a.pause(); c.pause(); d.pause(); e.pause(); f.pause(); g.pause(); h.pause();
+			i.pause(); j.pause(); k.pause(); l.pause();	
+
+
+			a.currentTime = 0;
+			c.currentTime = 0;
+			d.currentTime = 0;
+			e.currentTime = 0;
+			f.currentTime = 0;
+			g.currentTime = 0;
+			h.currentTime = 0;
+			i.currentTime = 0;
+			j.currentTime = 0;
+			k.currentTime = 0;
+			l.currentTime = 0;
+
+			nowPlaying = 2;
+		}
+
+		function finesseTime() {
+			aa.style.display = "none";
+			bb.style.display = "none";
+			cc.style.display = "block";
+			dd.style.display = "none";
+			ee.style.display = "none";
+			ff.style.display = "none";
+			gg.style.display = "none";
+			hh.style.display = "none";
+
+			smallPause.style.display = "block";
+			smallPlay.style.display = "none";
+
+			c.play()
+			a.pause(); b.pause(); d.pause(); e.pause(); f.pause(); g.pause(); h.pause();
+			i.pause(); j.pause(); k.pause(); l.pause();	
+
+
+			a.currentTime = 0;
+			b.currentTime = 0;
+			d.currentTime = 0;
+			e.currentTime = 0;
+			f.currentTime = 0;
+			g.currentTime = 0;
+			h.currentTime = 0;
+			i.currentTime = 0;
+			j.currentTime = 0;
+			k.currentTime = 0;
+			l.currentTime = 0;
+
+			nowPlaying = 3;
+		}
+
+		function puzzleTime() {
+			aa.style.display = "none";
+			bb.style.display = "none";
+			cc.style.display = "none";
+			dd.style.display = "block";
+			ee.style.display = "none";
+			ff.style.display = "none";
+			gg.style.display = "none";
+			hh.style.display = "none";
+
+			smallPause.style.display = "block";
+			smallPlay.style.display = "none";
+
+			d.play()
+			a.pause(); b.pause(); c.pause(); e.pause(); f.pause(); g.pause(); h.pause();
+			i.pause(); j.pause(); k.pause(); l.pause();	
+
+
+			a.currentTime = 0;
+			b.currentTime = 0;
+			c.currentTime = 0;
+			e.currentTime = 0;
+			f.currentTime = 0;
+			g.currentTime = 0;
+			h.currentTime = 0;
+			i.currentTime = 0;
+			j.currentTime = 0;
+			k.currentTime = 0;
+			l.currentTime = 0;
+
+			nowPlaying = 4;
+		}
+
+
+
+		
+
+
+
+
+
+
+
+
+		var itsPlaying;
+
+
+		function playCurrentSong() {
+			if(a.currentTime>0){
+				a.play();
+			}
+			else if (b.currentTime>0) {
+				b.play();
+			}
+			else if (c.currentTime>0) {
+				c.play();
+			}
+			else if (d.currentTime>0) {
+				d.play();
+			}
+			else if (e.currentTime>0) {
+				e.play();
+			}
+			else if (f.currentTime>0) {
+				f.play();
+			}
+			else if (g.currentTime>0) {
+				g.play();
+			}
+			else if (h.currentTime>0) {
+				h.play();
+			}
+
+			smallPause.style.display = "block";
+			smallPlay.style.display = "none";
+
+			itsPlaying = 1;
+		}
+
+		function pauseCurrentSong() {
+			if(a.currentTime>0){
+				a.pause();
+			}
+			else if(b.currentTime>0){
+				b.pause();
+			}
+			else if(c.currentTime>0){
+				c.pause();
+			}
+			else if(d.currentTime>0){
+				d.pause();
+			}
+			else if(e.currentTime>0){
+				e.pause();
+			}
+			else if(f.currentTime>0){
+				f.pause();
+			}
+			else if(g.currentTime>0){
+				g.pause();
+			}
+			else if(h.currentTime>0){
+				h.pause();
+			}
+			smallPause.style.display = "none";
+			smallPlay.style.display = "block";
+
+			itsPlaying = 2;
+		}
+
+
+
+
+		function playCurrentSongBig() {
+			if(a.currentTime>0){
+				a.play();
+			}
+			else if (b.currentTime>0) {
+				b.play();
+			}
+			else if (c.currentTime>0) {
+				c.play();
+			}
+			else if (d.currentTime>0) {
+				d.play();
+			}
+			else if (e.currentTime>0) {
+				e.play();
+			}
+			else if (f.currentTime>0) {
+				f.play();
+			}
+			else if (g.currentTime>0) {
+				g.play();
+			}
+			else if (h.currentTime>0) {
+				h.play();
+			}
+
+			document.getElementById("bigPlay").style.display = "none";
+			document.getElementById("bigPause").style.display = "block";
+
+			itsPlaying = 1;
+
+			
+		}
+
+		function pauseCurrentSongBig() {
+			if(a.currentTime>0){
+				a.pause();
+			}
+			else if(b.currentTime>0){
+				b.pause();
+			}
+			else if(c.currentTime>0){
+				c.pause();
+			}
+			else if(d.currentTime>0){
+				d.pause();
+			}
+			else if (e.currentTime>0) {
+				e.pause();
+			}
+			else if (f.currentTime>0) {
+				f.pause();
+			}
+			else if (g.currentTime>0) {
+				g.pause();
+			}
+			else if (h.currentTime>0) {
+				h.pause();
+			}
+			
+			document.getElementById("bigPlay").style.display = "block";
+			document.getElementById("bigPause").style.display = "none";
+
+			itsPlaying = 2;
+
+			
+		}
+
+
+
+
+
+
+
+
+		/* mainpage function*/
+
+		function sClick() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("scenePage").style.display = "block";
+
+		}
+
+			function openASoption(){
+				document.getElementById("scenePage").style.display = "none";
+				document.getElementById("sceneOption").style.display = "block";
+				document.getElementById("playingBar").style.display = "none";
+			}
+
+			function backToScene(){
+				document.getElementById("scenePage").style.display = "block";
+				document.getElementById("sceneOption").style.display = "none";
+				document.getElementById("playingBar").style.display = "block";
+				document.getElementById("makeYourOwn").style.display = "none";
+
+
+			}
+
+
+
+			function openFs(){
+				document.getElementById("scenePage").style.display = "none";
+				document.getElementById("familyScene").style.display = "block";
+
+			}
+
+			function goShuffle() {
+				sss = Math.random();
+
+				console.log(sss);
+
+				if (0 <= sss && sss <= 0.25 ) {
+					e.play()
+					a.pause(); b.pause(); c.pause(); d.pause();
+					f.pause(); g.pause(); h.pause();
+					i.pause(); j.pause(); k.pause(); l.pause();	
+
+					a.currentTime = 0;
+					b.currentTime = 0;
+					c.currentTime = 0;
+					d.currentTime = 0;
+					f.currentTime = 0;
+					g.currentTime = 0;
+					h.currentTime = 0;
+					i.currentTime = 0;
+					j.currentTime = 0;
+					k.currentTime = 0;
+					l.currentTime = 0;
+
+					aa.style.display = "none";
+					bb.style.display = "none";
+					cc.style.display = "none";
+					dd.style.display = "none";
+					ee.style.display = "block";
+					ff.style.display = "none";
+					gg.style.display = "none";
+					hh.style.display = "none";
+
+					smallPause.style.display = "block";
+					smallPlay.style.display = "none";
+
+				}
+				else if (0.25 < sss && sss <= 0.5){
+					f.play()
+					a.pause(); b.pause(); c.pause(); d.pause();
+					e.pause(); g.pause(); h.pause();
+					i.pause(); j.pause(); k.pause(); l.pause();	
+
+					a.currentTime = 0;
+					b.currentTime = 0;
+					c.currentTime = 0;
+					d.currentTime = 0;
+					e.currentTime = 0;
+					g.currentTime = 0;
+					h.currentTime = 0;
+					i.currentTime = 0;
+					j.currentTime = 0;
+					k.currentTime = 0;
+					l.currentTime = 0;
+
+					aa.style.display = "none";
+					bb.style.display = "none";
+					cc.style.display = "none";
+					dd.style.display = "none";
+					ee.style.display = "none";
+					ff.style.display = "block";
+					gg.style.display = "none";
+					hh.style.display = "none";
+
+					smallPause.style.display = "block";
+					smallPlay.style.display = "none";
+				}
+				else if(0.5 < sss && sss <= 0.75){
+					g.play()
+					a.pause(); b.pause(); c.pause(); d.pause();
+					e.pause(); f.pause(); h.pause();
+					i.pause(); j.pause(); k.pause(); l.pause();	
+
+					a.currentTime = 0;
+					b.currentTime = 0;
+					c.currentTime = 0;
+					d.currentTime = 0;
+					e.currentTime = 0;
+					f.currentTime = 0;
+					h.currentTime = 0;
+					i.currentTime = 0;
+					j.currentTime = 0;
+					k.currentTime = 0;
+					l.currentTime = 0;
+
+					aa.style.display = "none";
+					bb.style.display = "none";
+					cc.style.display = "none";
+					dd.style.display = "none";
+					ee.style.display = "none";
+					ff.style.display = "none";
+					gg.style.display = "block";
+					hh.style.display = "none";
+
+					smallPause.style.display = "block";
+					smallPlay.style.display = "none";
+
+				}
+				else if(0.75 < sss && sss <1){
+					h.play()
+					a.pause(); b.pause(); c.pause(); d.pause();
+					e.pause(); f.pause(); g.pause();
+					i.pause(); j.pause(); k.pause(); l.pause();	
+
+					a.currentTime = 0;
+					b.currentTime = 0;
+					c.currentTime = 0;
+					d.currentTime = 0;
+					e.currentTime = 0;
+					f.currentTime = 0;
+					g.currentTime = 0;
+					i.currentTime = 0;
+					j.currentTime = 0;
+					k.currentTime = 0;
+					l.currentTime = 0;
+
+					aa.style.display = "none";
+					bb.style.display = "none";
+					cc.style.display = "none";
+					dd.style.display = "none";
+					ee.style.display = "none";
+					ff.style.display = "none";
+					gg.style.display = "none";
+					hh.style.display = "block";
+
+					smallPause.style.display = "block";
+					smallPlay.style.display = "none";
+
+				}
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+			function goMake() {
+				document.getElementById("sceneOption").style.display = "none";
+				document.getElementById("makeYourOwn").style.display = "block";
+			}
+
+
+
+
+
+
+		function gClick() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("goPage").style.display = "block";
+
+		}
+
+		function cClick() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("collectionPage").style.display = "block";
+
+		}
+
+
+
+
+		function barClick1() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("currentlyPlaying").style.display = "block";
+			document.getElementById("playingBar").style.display = "none";
+			document.getElementById("bigBruno").style.display = "block";
+
+			if (itsPlaying == 1){
+				document.getElementById("bigPlay").style.display = "none";
+				document.getElementById("bigPause").style.display = "block";
+
+			} else if(itsPlaying == 2){
+				document.getElementById("bigPlay").style.display = "block";
+				document.getElementById("bigPause").style.display = "none";
+			}
+		}	
+		function barClick2() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("currentlyPlaying").style.display = "block";
+			document.getElementById("playingBar").style.display = "none";
+			document.getElementById("bigAyue").style.display = "block";
+
+			if (itsPlaying == 1){
+				document.getElementById("bigPlay").style.display = "none";
+				document.getElementById("bigPause").style.display = "block";
+
+			} else if(itsPlaying == 2){
+				document.getElementById("bigPlay").style.display = "block";
+				document.getElementById("bigPause").style.display = "none";
+			}
+
+
+		}	
+		function barClick3() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("currentlyPlaying").style.display = "block";
+			document.getElementById("playingBar").style.display = "none";
+			document.getElementById("bigFinesse").style.display = "block";
+
+			if (itsPlaying == 1){
+				document.getElementById("bigPlay").style.display = "none";
+				document.getElementById("bigPause").style.display = "block";
+
+			} else if(itsPlaying == 2){
+				document.getElementById("bigPlay").style.display = "block";
+				document.getElementById("bigPause").style.display = "none";
+			}
+		}	
+		function barClick4() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("currentlyPlaying").style.display = "block";
+			document.getElementById("playingBar").style.display = "none";
+			document.getElementById("bigPuzzleman").style.display = "block";
+
+			if (itsPlaying == 1){
+				document.getElementById("bigPlay").style.display = "none";
+				document.getElementById("bigPause").style.display = "block";
+
+			} else if(itsPlaying == 2){
+				document.getElementById("bigPlay").style.display = "block";
+				document.getElementById("bigPause").style.display = "none";
+			}
+		}
+
+
+
+
+
+
+
+		function barClick5() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("currentlyPlaying").style.display = "block";
+			document.getElementById("playingBar").style.display = "none";
+			document.getElementById("bigFur").style.display = "block";
+
+			if (itsPlaying == 1){
+				document.getElementById("bigPlay").style.display = "none";
+				document.getElementById("bigPause").style.display = "block";
+
+			} else if(itsPlaying == 2){
+				document.getElementById("bigPlay").style.display = "block";
+				document.getElementById("bigPause").style.display = "none";
+			}
+		}
+
+		function barClick6() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("currentlyPlaying").style.display = "block";
+			document.getElementById("playingBar").style.display = "none";
+			document.getElementById("bigJay").style.display = "block";
+
+			if (itsPlaying == 1){
+				document.getElementById("bigPlay").style.display = "none";
+				document.getElementById("bigPause").style.display = "block";
+
+			} else if(itsPlaying == 2){
+				document.getElementById("bigPlay").style.display = "block";
+				document.getElementById("bigPause").style.display = "none";
+			}
+		}
+
+		function barClick7() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("currentlyPlaying").style.display = "block";
+			document.getElementById("playingBar").style.display = "none";
+			document.getElementById("bigEmma").style.display = "block";
+
+			if (itsPlaying == 1){
+				document.getElementById("bigPlay").style.display = "none";
+				document.getElementById("bigPause").style.display = "block";
+
+			} else if(itsPlaying == 2){
+				document.getElementById("bigPlay").style.display = "block";
+				document.getElementById("bigPause").style.display = "none";
+			}
+		}
+
+		function barClick8() {
+			document.getElementById("mainPage").style.display = "none";
+			document.getElementById("currentlyPlaying").style.display = "block";
+			document.getElementById("playingBar").style.display = "none";
+			document.getElementById("bigMen").style.display = "block";
+
+			if (itsPlaying == 1){
+				document.getElementById("bigPlay").style.display = "none";
+				document.getElementById("bigPause").style.display = "block";
+
+			} else if(itsPlaying == 2){
+				document.getElementById("bigPlay").style.display = "block";
+				document.getElementById("bigPause").style.display = "none";
+			}
+		}	
+
+
+
+
+
+
+
+
+
+		function backToMainNbar() {
+			document.getElementById("currentlyPlaying").style.display = "none";
+			document.getElementById("playingBar").style.display = "block";
+
+			document.getElementById("bigBruno").style.display = "none";
+			document.getElementById("bigAyue").style.display = "none";
+			document.getElementById("bigFinesse").style.display = "none";
+			document.getElementById("bigPuzzleman").style.display = "none";
+
+			document.getElementById("bigFur").style.display = "none";
+			document.getElementById("bigJay").style.display = "none";
+			document.getElementById("bigEmma").style.display = "none";
+			document.getElementById("bigMen").style.display = "none";
+
+			if (itsPlaying == 1){
+				document.getElementById("playDisplay").style.display = "none";
+				document.getElementById("pauseDisplay").style.display = "block";
+
+			} else if(itsPlaying == 2){
+				document.getElementById("playDisplay").style.display = "block";
+				document.getElementById("pauseDisplay").style.display = "none";
+			}
+
+		}	/* (solved)problem 2: program the path that when click that down v, it goes back to the page before, not just the front page*/
+
+
+		function sBackToMain(){
+			document.getElementById("mainPage").style.display = "block";
+			document.getElementById("scenePage").style.display = "none";
+		}
+
+		function ssBackToMain(){
+			document.getElementById("scenePage").style.display = "block";
+			document.getElementById("familyScene").style.display = "none";
+		}
+
+		function gBackToMain(){
+			document.getElementById("mainPage").style.display = "block";
+			document.getElementById("goPage").style.display = "none";
+		}
+
+		function cBackToMain(){
+			document.getElementById("mainPage").style.display = "block";
+			document.getElementById("collectionPage").style.display = "none";
+		}
+
+
+
+// Go page function here
+
+
+		function goNext(){
+			xxx = Math.random();
+
+			document.getElementById("playR").style.display = "none";
+			document.getElementById("pauseR").style.display = "block";
+
+				console.log(xxx);
+
+				if (0 <= xxx && xxx <= 0.25 ) {
+					i.play();
+					a.pause(); b.pause(); c.pause(); d.pause(); 
+					e.pause(); f.pause(); g.pause(); h.pause(); 
+					j.pause(); k.pause(); l.pause(); 
+
+					a.currentTime = 0;
+					b.currentTime = 0;
+					c.currentTime = 0;
+					d.currentTime = 0;
+					e.currentTime = 0;
+					f.currentTime = 0;
+					g.currentTime = 0;
+					h.currentTime = 0;
+
+					j.currentTime = 0;
+					k.currentTime = 0;
+					l.currentTime = 0;
+
+
+
+					aa.style.display = "none";
+					bb.style.display = "none";
+					cc.style.display = "none";
+					dd.style.display = "none";
+					ee.style.display = "none";
+					ff.style.display = "none";
+					gg.style.display = "none";
+					hh.style.display = "none";
+
+					iii.style.display = "block";
+					jjj.style.display = "none";
+					kkk.style.display = "none";
+					lll.style.display = "none";
+
+					iiiO.style.display = "block";
+					jjjO.style.display = "none";
+					kkkO.style.display = "none";
+					lllO.style.display = "none";
+
+
+
+					
+
+
+
+
+
+					// smallPause.style.display = "block";
+					// smallPlay.style.display = "none";
+
+				}
+				else if (0.25 < xxx && xxx <= 0.5 ) {
+					j.play();
+					a.pause(); b.pause(); c.pause(); d.pause(); 
+					e.pause(); f.pause(); g.pause(); h.pause(); 
+					i.pause(); k.pause(); l.pause(); 
+
+					a.currentTime = 0;
+					b.currentTime = 0;
+					c.currentTime = 0;
+					d.currentTime = 0;
+					e.currentTime = 0;
+					f.currentTime = 0;
+					g.currentTime = 0;
+					h.currentTime = 0;
+
+					i.currentTime = 0;
+					k.currentTime = 0;
+					l.currentTime = 0;
+
+
+
+					aa.style.display = "none";
+					bb.style.display = "none";
+					cc.style.display = "none";
+					dd.style.display = "none";
+					ee.style.display = "none";
+					ff.style.display = "none";
+					gg.style.display = "none";
+					hh.style.display = "none";
+
+					iii.style.display = "none";
+					jjj.style.display = "block";
+					kkk.style.display = "none";
+					lll.style.display = "none";
+
+
+					iiiO.style.display = "none";
+					jjjO.style.display = "block";
+					kkkO.style.display = "none";
+					lllO.style.display = "none";
+
+
+					// smallPause.style.display = "block";
+					// smallPlay.style.display = "none";
+
+				}
+				else if (0.5 < xxx && xxx <= 0.75 ) {
+					k.play();
+					a.pause(); b.pause(); c.pause(); d.pause(); 
+					e.pause(); f.pause(); g.pause(); h.pause(); 
+					i.pause(); j.pause(); l.pause(); 
+
+					a.currentTime = 0;
+					b.currentTime = 0;
+					c.currentTime = 0;
+					d.currentTime = 0;
+					e.currentTime = 0;
+					f.currentTime = 0;
+					g.currentTime = 0;
+					h.currentTime = 0;
+
+					i.currentTime = 0;
+					j.currentTime = 0;
+					l.currentTime = 0;
+
+
+
+					aa.style.display = "none";
+					bb.style.display = "none";
+					cc.style.display = "none";
+					dd.style.display = "none";
+					ee.style.display = "none";
+					ff.style.display = "none";
+					gg.style.display = "none";
+					hh.style.display = "none";
+
+					iii.style.display = "none";
+					jjj.style.display = "none";
+					kkk.style.display = "block";
+					lll.style.display = "none";
+
+
+					iiiO.style.display = "none";
+					jjjO.style.display = "none";
+					kkkO.style.display = "block";
+					lllO.style.display = "none";
+
+
+					// smallPause.style.display = "block";
+					// smallPlay.style.display = "none";
+
+				}
+				else if (0.75 < xxx && xxx < 1 ) {
+					l.play();
+					a.pause(); b.pause(); c.pause(); d.pause(); 
+					e.pause(); f.pause(); g.pause(); h.pause(); 
+					i.pause(); j.pause(); k.pause(); 
+
+					a.currentTime = 0;
+					b.currentTime = 0;
+					c.currentTime = 0;
+					d.currentTime = 0;
+					e.currentTime = 0;
+					f.currentTime = 0;
+					g.currentTime = 0;
+					h.currentTime = 0;
+
+					i.currentTime = 0;
+					j.currentTime = 0;
+					k.currentTime = 0;
+
+
+
+					aa.style.display = "none";
+					bb.style.display = "none";
+					cc.style.display = "none";
+					dd.style.display = "none";
+					ee.style.display = "none";
+					ff.style.display = "none";
+					gg.style.display = "none";
+					hh.style.display = "none";
+
+					iii.style.display = "none";
+					jjj.style.display = "none";
+					kkk.style.display = "none";
+					lll.style.display = "block";
+
+					iiiO.style.display = "none";
+					jjjO.style.display = "none";
+					kkkO.style.display = "none";
+					lllO.style.display = "block";
+
+
+					//smallPause.style.display = "block";
+					//smallPlay.style.display = "none";
+
+				}
+
+		}
+
+
+		function goPlay() {
+					smallPause.style.display = "none";
+					smallPlay.style.display = "none";
+
+
+					a.pause(); b.pause(); c.pause(); d.pause(); 
+					e.pause(); f.pause(); g.pause(); h.pause(); 
+					j.pause(); k.pause(); l.pause(); 
+
+					a.currentTime = 0;
+					b.currentTime = 0;
+					c.currentTime = 0;
+					d.currentTime = 0;
+					e.currentTime = 0;
+					f.currentTime = 0;
+					g.currentTime = 0;
+					h.currentTime = 0;
+
+					j.currentTime = 0;
+					k.currentTime = 0;
+					l.currentTime = 0;
+
+
+			if (sorrySpecialSituation == 1) {
+				i.play();
+			}
+			else if (sorrySpecialSituation == 2) {
+				j.play();
+			}
+			else if (sorrySpecialSituation == 3) {
+				k.play();
+			}
+			else if (sorrySpecialSituation == 4) {
+				l.play();
+			} 
+			else{
+				i.play();
+					
+
+
+
+					aa.style.display = "none";
+					bb.style.display = "none";
+					cc.style.display = "none";
+					dd.style.display = "none";
+					ee.style.display = "none";
+					ff.style.display = "none";
+					gg.style.display = "none";
+					hh.style.display = "none";
+
+					iii.style.display = "block";
+					jjj.style.display = "none";
+					kkk.style.display = "none";
+					lll.style.display = "none";
+
+					iiiO.style.display = "block";
+					jjjO.style.display = "none";
+					kkkO.style.display = "none";
+					lllO.style.display = "none";
+
+			}
+
+
+			document.getElementById("playR").style.display = "none";
+			document.getElementById("pauseR").style.display = "block";
+			
+		}
+
+
+
+
+		function goPause() {
+
+			document.getElementById("playR").style.display = "block";
+			document.getElementById("pauseR").style.display = "none";
+					
+
+					if(i.currentTime>0){
+						i.pause();
+						sorrySpecialSituation = 1;
+					}
+					else if (j.currentTime>0) {
+						j.pause();
+						sorrySpecialSituation = 2;
+					}
+					else if (k.currentTime>0) {
+						k.pause();
+						sorrySpecialSituation = 3;
+					}
+					else if (l.currentTime>0) {
+						l.pause();
+						sorrySpecialSituation = 4;
+					}
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>

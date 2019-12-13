@@ -1,0 +1,740 @@
+ 
+/*base */
+
+.background {
+	width: 360px;
+	height: 640px;
+	position: absolute;
+	background-color: #1F1F1F;
+}
+
+.buttonOne{
+	content: url(resources/buttonOnLeft.jpg);
+	width: 180px;
+	height: 54px;
+	position: absolute;
+	left: 8px;
+	top: 594px;
+}
+
+.buttonTwo{
+	content: url(resources/buttonOnRight.jpg);
+	width: 180px;
+	height: 54px;
+	position: absolute;
+	left: 188px;
+	top: 594px;
+}
+
+
+
+
+/* currently playing area little one (bar)*/
+
+.playingSong1{
+	content: url(resources/bruno.jpg);
+	width: 360px;
+	position: absolute;
+	top: 540px;
+	display: none;
+}
+
+.playingSong2{
+	content: url(resources/ayue.jpg);
+	width: 360px;
+	position: absolute;
+	top: 540px;
+	display: none;
+}
+.playingSong3{
+	content: url(resources/finesse.jpg);
+	width: 360px;
+	position: absolute;
+	top: 540px;
+	display: none;
+}
+.playingSong4{
+	content: url(resources/puzzleman.jpg);
+	width: 360px;
+	position: absolute;
+	top: 540px;
+	display: none;
+}
+
+
+
+
+.playingSong5{
+	content: url(resources/theFur.jpg);
+	width: 360px;
+	position: absolute;
+	top: 540px;
+	display: none;
+}
+
+.playingSong6{
+	content: url(resources/jayChou.jpg);
+	width: 360px;
+	position: absolute;
+	top: 540px;
+	display: none;
+}
+
+.playingSong7{
+	content: url(resources/bernache.jpg);
+	width: 360px;
+	position: absolute;
+	top: 540px;
+	display: none;
+}
+
+.playingSong8{
+	content: url(resources/acoustic.jpg);
+	width: 360px;
+	position: absolute;
+	top: 540px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pauseButton {
+	content: url(resources/pause.jpg);
+	width: 14px;
+	position: absolute;
+	top: 557px;
+	left: 333px;
+	display: none;
+}
+
+.playButton {
+	content: url(resources/play.jpg);
+	width: 18px;
+	position: absolute;
+	top: 556px;
+	left: 333px;
+	display: none;
+}
+
+
+/* currently playing area BIG one (page)*/
+
+.purpleBackground {
+	content: url(rs_theSong/purpleBackground.jpg);
+	width: 360px;
+	position: absolute;
+}
+
+.dragDown {
+	content: url(rs_theSong/dragDown.jpg);
+	width: 21px;
+	position: absolute;
+	top: 24px;
+	left: 186px;
+}
+
+
+.bigBruno {
+	content: url(rs_theSong/bigBruno.jpg);
+	width: 255px;
+	position: absolute;
+	top: 73px;
+	left: 60px;
+	display: none;
+}
+
+.bigFinesse {
+	content: url(rs_theSong/bigFinesse.jpg);
+	width: 255px;
+	position: absolute;
+	top: 73px;
+	left: 60px;
+	display: none;
+}
+
+.bigAyue {
+	content: url(rs_theSong/bigAyue.jpg);
+	width: 255px;
+	position: absolute;
+	top: 73px;
+	left: 60px;
+	display: none;
+}
+
+.bigPuzzleman {
+	content: url(rs_theSong/bigPuzzleman.jpg);
+	width: 255px;
+	position: absolute;
+	top: 73px;
+	left: 60px;
+	display: none;
+}
+
+
+
+
+.bigFur {
+	content: url(rs_theSong/bigFur.jpg);
+	width: 255px;
+	position: absolute;
+	top: 73px;
+	left: 60px;
+	display: none;
+}
+
+.bigJay {
+	content: url(rs_theSong/bigJay.jpg);
+	width: 255px;
+	position: absolute;
+	top: 73px;
+	left: 60px;
+	display: none;
+}
+
+.bigEmma {
+	content: url(rs_theSong/bigEmma.jpg);
+	width: 255px;
+	position: absolute;
+	top: 73px;
+	left: 60px;
+	display: none;
+}
+
+.bigMen {
+	content: url(rs_theSong/bigMen.jpg);
+	width: 255px;
+	position: absolute;
+	top: 73px;
+	left: 60px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+.lyrics {
+	content: url(rs_theSong/lyrics.jpg);
+	width: 21px;
+	position: absolute;
+	top: 480px;
+	left: 55px;
+}
+
+.bigLast {
+	content: url(rs_theSong/bigLast.jpg);
+	width: 34px;
+	position: absolute;
+	top: 478px;
+	left: 108px;
+}
+
+
+.bigPlay {
+	content: url(rs_theSong/bigPlay.jpg);
+	width: 43px;
+	position: absolute;
+	top: 468px;
+	left: 176px;
+	display: none;
+}
+
+.bigPause {
+	content: url(rs_theSong/bigPause.jpg);
+	width: 28px;
+	position: absolute;
+	top: 470px;
+	left: 181px;
+
+}
+
+.bigNext {
+	content: url(rs_theSong/bigNext.jpg);
+	width: 34px;
+	position: absolute;
+	top: 477px;
+	left: 250px;
+}
+
+.bigPlus {
+	content: url(rs_theSong/bigPlus.jpg);
+	width: 24px;
+	position: absolute;
+	top: 481px;
+	left: 308px;
+
+}
+
+
+.timeline {
+	content: url(rs_theSong/timeline.jpg);
+	width: 318px;
+	position: absolute;
+	top: 548px;
+	left: 28px;
+}
+
+.topButtonOne {
+	content: url(rs_theSong/topButtonOne.jpg);
+	width: 25px;
+	position: absolute;
+	top: 602px;
+	left: 322px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* first Page */
+
+.news {
+	content: url(resources/menitrust.jpg);
+	width: 360px;
+	position: absolute;
+}
+
+.blockOne{
+	content: url(resources/scene.jpg);
+	width: 153px;
+	position: absolute;
+	left: 27px;
+	top: 196px;
+}
+
+.blockTwo{
+	content: url(resources/go.jpg);
+	width: 153px;
+	position: absolute;
+	left: 192px;
+	top: 196px;
+}
+
+.blockThree{
+	content: url(resources/collection.jpg);
+	width: 153px;
+	position: absolute;
+	left: 27px;
+	top: 359px;
+}
+
+.blockFour{
+	content: url(resources/search.jpg);
+	width: 153px;
+	position: absolute;
+	left: 192px;
+	top: 359px;
+}
+
+
+/* scene page */
+
+.addScene{
+	content: url(rs_scene/addScene.jpg);
+	width: 175px;
+	position: absolute;
+	left: 48px;
+	top: 83px;
+}
+
+
+.familySb{
+	content: url(rs_scene/familySb.jpg);
+	width: 153px;
+	position: absolute;
+	left: 29px;
+	top: 153px;
+}
+
+.study{
+	content: url(rs_scene/study.jpg);
+	width: 153px;
+	position: absolute;
+	left: 194px;
+	top: 153px;
+}
+
+.studyLofi{
+	content: url(rs_scene/studyLofi.jpg);
+	width: 153px;
+	position: absolute;
+	left: 29px;
+	top: 324px;
+}
+
+
+
+.addScene2{
+	content: url(rs_scene/addScene2.jpg);
+	width: 302px;
+	position: absolute;
+	left: 39px;
+	top: 80px;
+}
+
+
+
+/* scene page 1.0 */
+
+
+.asoBackground{
+	content: url(rs_scene/asoBackground.jpg);
+	width: 360px;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+
+.browseButton{
+	content: url(rs_scene/browseButton.jpg);
+	width: 345px;
+	position: absolute;
+	left: 16px;
+	top: 457px;
+}
+
+.mmoButton{
+	content: url(rs_scene/mmoButton.jpg);
+	width: 345px;
+	position: absolute;
+	left: 16px;
+	top: 511px;
+
+}
+
+.cancelButton{
+	content: url(rs_scene/cancelButton.jpg);
+	width: 345px;
+	position: absolute;
+	left: 16px;
+	top: 572px;
+
+}
+
+
+
+
+/* scene page 2.0 */
+
+.shuffleB{
+	content: url(rs_scene/shuffleB.jpg);
+	width: 188px;
+	position: absolute;
+	left: 92px;
+	top: 169px;
+}
+
+.familyPic{
+	content: url(rs_scene/familyPic.jpg);
+	width: 360px;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+
+.aBoard{
+	content: url(rs_scene/aBoard.jpg);
+	width: 311px;
+	position: absolute;
+	left: 33px;
+	top: 276px;
+}
+
+
+
+
+
+
+.blueberry {
+	content: url(rs_scene/blueberry.jpg);
+	width: 288px;
+	position: absolute;
+	left: 45px;
+	top: 288px;
+}
+
+.mds {
+	content: url(rs_scene/mds.jpg);
+	width: 288px;
+	position: absolute;
+	left: 45px;
+	top: 359px;
+}
+
+.yourName {
+	content: url(rs_scene/yourName.jpg);
+	width: 288px;
+	position: absolute;
+	left: 45px;
+	top: 430px;
+}
+
+.htbar {
+	content: url(rs_scene/htbar.jpg);
+	width: 288px;
+	position: absolute;
+	left: 45px;
+	top: 501px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* go Page */
+
+
+.iTunes{
+	content: url(rs_go/iTunes.jpg);
+	width: 272px;
+	position: absolute;
+	left: 70px;
+	top: 83px;
+}
+
+.containerGrey{
+	content: url(rs_go/container.jpg);
+	width: 311px;
+	position: absolute;
+	left: 33px;
+	top: 304px;
+}
+
+.lastSong{
+	content: url(rs_go/lastSong.jpg);
+	width: 34px;
+	position: absolute;
+	left: 107px;
+	top: 337px;
+}
+
+.bPlayButton{
+	content: url(rs_go/bPlayButton.jpg);
+	width: 40px;
+	position: absolute;
+	left: 173px;
+	top: 329px;
+
+}
+
+.bPauseButton{
+	content: url(rs_go/bPauseButton.jpg);
+	width: 26px;
+	position: absolute;
+	left: 179px;
+	top: 331px;
+	display: none;
+
+}
+
+
+
+.nextSong{
+	content: url(rs_go/nextSong.jpg);
+	width: 34px;
+	position: absolute;
+	left: 241px;
+	top: 336px;
+}
+
+.degree{
+	content: url(rs_go/degree.jpg);
+	width: 118px;
+	position: absolute;
+	left: 129px;
+	top: 436px;
+}
+
+
+
+
+
+
+.herbieAb{
+	content: url(rs_go/herbieAb.jpg);
+	width: 143px;
+	position: absolute;
+	left: 117px;
+	top: 83px;
+	display: none;
+}
+
+.billAb{
+	content: url(rs_go/billAb.jpg);
+	width: 143px;
+	position: absolute;
+	left: 117px;
+	top: 83px;
+	display: none;
+}
+
+.mitaAb{
+	content: url(rs_go/mitaAb.jpg);
+	width: 143px;
+	position: absolute;
+	left: 117px;
+	top: 83px;
+	display: none;
+}
+
+.puzzleAb{
+	content: url(rs_go/puzzleAb.jpg);
+	width: 143px;
+	position: absolute;
+	left: 117px;
+	top: 83px;
+	display: none;
+}
+
+
+
+
+
+
+.herbieTt{
+	content: url(rs_go/herbieTt.jpg);
+	width: 69px;
+	position: absolute;
+	left: 153px;
+	top: 241px;
+	display: none;
+}
+
+.billTt{
+	content: url(rs_go/billTt.jpg);
+	width: 200px;
+	position: absolute;
+	left: 88px;
+	top: 242px;
+	display: none;
+}
+
+.mitaTt{
+	content: url(rs_go/mitaTt.jpg);
+	width: 184px;
+	position: absolute;
+	left: 95px;
+	top: 241px;
+	display: none;
+}
+
+.puzzleTt{
+	content: url(rs_go/puzzleTt.jpg);
+	width: 82px;
+	position: absolute;
+	left: 147px;
+	top: 241px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+/* collection page */
+
+
+
+.returnButton{
+	content: url(rs_collection/back.jpg);
+	width: 23px;
+	position: absolute;
+	left: 22px;
+	top: 29px;
+}
+
+.titleC {
+	content: url(rs_collection/title.jpg);
+	width: 145px;
+	position: absolute;
+	left: 29px;
+	top: 73px;
+}
+
+.boardC {
+	content: url(rs_collection/board.jpg);
+	width: 311px;
+	position: absolute;
+	left: 33px;
+	top: 123px;
+
+}
+
+.firstC {
+	content: url(rs_collection/whatiLike.jpg);
+	width: 288px;
+	position: absolute;
+	left: 45px;
+	top: 166px;
+
+}
+
+.secondC{
+	content: url(rs_collection/iibj.jpg);
+	width: 288px;
+	position: absolute;
+	left: 45px;
+	top: 237px;
+
+}
+
+.thirdC{
+	content: url(rs_collection/finesseRemix.jpg);
+	width: 288px;
+	position: absolute;
+	left: 45px;
+	top: 308px;
+}
+
+.fourthC{
+	content: url(rs_collection/organicMelody.jpg);
+	width: 288px;
+	position: absolute;
+	left: 45px;
+	top: 379px;
+}
+
+
+
+
+
+
+
+
+
